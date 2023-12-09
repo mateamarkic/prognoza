@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:ital@1&display=swap');
+
+
+* {
+  font-family: "Montserrat";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("slike/sunce.jpg");
+  background-size: 200%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 80px auto;
+  max-width: 450px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+form {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+form input:focus {
+  outline: solid 2px rgb(88, 162, 223);
+}
+
+form button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #58a2df;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 400ms;
+}
+
+form button:hover {
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+}
+
+h2, h5 {
+  color: rgb(42, 41, 41);
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 70%;
+}
+
+.weather {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.rain {
+  display: block;
+  margin: 30px auto;
+  max-width: 150px;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 6dvh;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px auto;
+  padding: 0 30px;
+  width: 80%;
+}
+
+.bottom h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+.bottom div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.bottom img {
+  max-width: 40px;
+}
+
+.error img {
+  max-width: 160px;
+  margin-bottom: 20px;
+}
+
+.error {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+#weatherType::first-letter {
+  text-transform: uppercase;
+}

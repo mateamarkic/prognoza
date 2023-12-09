@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Prognoza</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <input type="text" placeholder="Unesi ime grada" id="city">
+      <button>Pretraži</button>
+    </form>
+    <div class="home">
+      <h1>Moja jednostavna aplikacija za prognozu</h1>
+      <h3>Unesi ime grada i saznaj kakvo te vrijeme čeka!</h3>
+      <img class="rain" src="slike/kisa.gif" alt="">
+    </div>
+    <div class="weather">
+      <h2 id="temperature"></h2>
+      <h4 id="cityName"></h4>
+      <div class="bottom">
+        <div>
+          <img src="slike/vlaznost.svg" alt="">
+          <h5>
+            Vlažnost
+          </h5>
+          <p id="humidity"></p>
+        </div>
+        <div>
+          <img src="slike/opis.svg" alt="">
+          <h5>
+            Opis
+          </h5>
+          <p id="weatherType"></p>
+        </div>
+        <div>
+          <img src="slike/temperatura.svg" alt="">
+          <h5>
+            Feels like
+          </h5>
+          <p id="feelsLike"></p>
+        </div>
+      </div>
+    </div>
+      <div class="error">
+        <h4>Ovaj grad ne postoji na zemaljskoj kugli.</h4>
+        <img class="alien" src="slike/marsovac.svg" alt="">
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
